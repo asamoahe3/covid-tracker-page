@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 :root {
   --brand-blue: #262c7c;
@@ -9,7 +9,7 @@
   --max-padding: 2.5rem 5rem;
   --min-padding: 1rem 2rem;
   --drop-shadow: 0 10px 50px rgb(0 0 0 / 10%);
-  --drop-shadow-b: 0px 32px 40px rgba(74, 101, 128, 0.09);
+  --drop-shadow-b: 0px 32px 40px rgba(74, 101, 128, 0.08);
   --border-top: 5px solid var(--brand-blue);
 }
 
@@ -27,15 +27,6 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", sans-serif;
-}
-
 input[type="text"] {
   width: 100%;
   padding: 10px 15px;
@@ -44,7 +35,7 @@ input[type="text"] {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Outfit", sans-serif;
   background-color: var(--bg-accent);
   color: var(--mute-dark);
   padding: 0;

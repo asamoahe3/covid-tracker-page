@@ -1,445 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Emmanuel Asamoah">
-        <title>Covid Live Tracker</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emmanuel Asamoah">
+    <title>Covid Live Tracker</title>
 
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <body>
-        <header class="header">
-            <!--site logo-->
-            <a href="index.html" role="link" class="header__logo"><img src="./images/assets/logo.PNG"
-                    alt="Live tracker website logo"></a>
+<body>
+    <header class="header">
+        <!--site logo-->
+        <a href="index.html" role="link" class="header__logo"><img src="./images/assets/logo.PNG"
+                alt="Live tracker website logo"></a>
 
-            <!-- Nevigation-->
-            <nav class="nav" role="navigation">
-                <ul class="nav-item">
-                    <li><a class="nav-link nav-link--active" href="#">Home</a></li>
-                    <li><a class="nav-link" href="#">Our Results</a></li>
-                    <li><a class="nav-link" href="#">Exterior</a></li>
-                </ul>
-            </nav>
-        </header>
+        <!-- Nevigation-->
+        <nav class="nav" role="navigation">
+            <ul class="nav-item">
+                <li><a class="nav-link nav-link--active" href="#">Home</a></li>
+                <li><a class="nav-link" href="#">Our Results</a></li>
+                <li><a class="nav-link" href="#">Exterior</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Hero left section-->
-        <section class="hero">
-            <div class="hero__left">
-                <h1 class="hero__left--heading">Covid-19 Live Tracker</h1>
-                <p class="hero__left--text">
-                    The Coronavirus (Covid-19) was first reported in Wuhin, Hubai, China in December 2019, the
-                    outbreak was later recorgnized as a pandemic by the World Health Organization (WHO) on
-                    11 March 2020.
+    <!-- Hero left section-->
+    <section class="hero">
+        <div class="hero__left">
+            <h1 class="hero__left--heading">Covid-19 Live Tracker</h1>
+            <p class="hero__left--text">
+                The Coronavirus (Covid-19) was first reported in Wuhin, Hubai, China in December 2019, the
+                outbreak was later recorgnized as a pandemic by the World Health Organization (WHO) on
+                11 March 2020.
+            </p>
+
+            <div class="hero__left--buttons">
+                <a href="#" class="btn btn--red">How to Protext</a>
+                <a href="#" class="btn btn--transparent">Find a Doctor</a>
+            </div>
+        </div>
+
+        <div class="hero__right">
+            <img src="./images/assets/covid-avatar.PNG" alt="Illustrative image of the Covid-19 virus."
+                class="hero__right--img">
+        </div>
+    </section>
+
+    <!-- Main content-->
+    <main class="container" role="main">
+        <!-- Staticsis Section-->
+        <section class="staticsis">
+            <!-- global -->
+            <div class="staticsis__item global">
+                <img src="./images/assets/global.png" alt="llustrative image representing global active cases"
+                    class="staticsis__item--img global--img">
+
+                <div class="staticsis__item--text">
+                    <p class="text-mute text-small text--left">Status Overview <span
+                            class="staticisis__global--text-live">
+                            Live</span></p>
+                    <h3 class="staticsis__item--text--heading text--left">Global</h3>
+                </div>
+            </div>
+
+            <!-- active cases -->
+            <div class="staticsis__item">
+                <img src="./images/assets/active.png" alt="Illustrative image demonstrating covid-19 active cases"
+                    class="staticsis__item--img">
+
+                <div class="staticsis__item--text">
+                    <p class="text-mute text-small">Total Coronavirus cases</p>
+                    <h3 class="staticsis__item--text--heading">1,245,347</h3>
+                </div>
+            </div>
+
+            <!-- Total recovered -->
+            <div class="staticsis__item">
+                <img src="./images/assets/recovered.png" alt="Illustrative image demonstrating total recovered cases"
+                    class="staticsis__item--img">
+
+                <div class="staticsis--item--text">
+                    <p class="text-mute text-small">Total Recovered</p>
+                    <h3 class="staticsis__item--text--heading">259,455</h3>
+                </div>
+            </div>
+
+            <!-- Total deaths-->
+            <div class="staticsis__item">
+                <img src="./images/assets/death.png" alt="Illustrative image demonstrating total death cases"
+                    class="staticsis__item--img death--img">
+
+                <div class="staticsis--item--text">
+                    <p class="text-mute text-small text--left">Total Deaths</p>
+                    <h3 class="staticsis__item--text--heading text--left">68,184</h3>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- demographics-->
+        <section class="demographics">
+            <div class="demographic__large">
+                <div class="demgraphic__large--inner">
+                    <h2 class="demographic__large--inner--heading">Covid-19 Affected Areas</h2>
+                    <div class="large--inner-headers">
+                        <h5 class="text-blue">Most affected</h5>
+                        <h5 class="text-blue">Least affected</h5>
+                    </div>
+                </div>
+
+                <div class="map-cover"></div>
+            </div>
+
+            <div class="demographics__small">
+                <form action="#" method="get" class="form">
+                    <input type="text" class="form__input" placeholder="Enter a location">
+                </form>
+                <div class="result-panel">
+                    <h5 class="result-panel__left">Global</h5>
+                    <h5 class="result-panel__right">1,247,374</h5>
+                </div>
+                <div class="hr"></div>
+
+                <!-- Country list-->
+                <aside class="country">
+                    <div class="country__item">
+                        <img src="./images/flag/flag-usa.png" alt="United states" class="country__item--img">
+                        <h4 class="country__item--text">United States</h4>
+                        <h4 class="country__item--total">321,000</h4>
+                    </div>
+
+                    <div class="country__item">
+                        <img src="./images/flag/flag-spain.png" alt="United states" class="country__item--img">
+                        <h4 class="country__item--text">Spain</h4>
+                        <h4 class="country__item--total">131,000</h4>
+                    </div>
+
+                    <div class="country__item">
+                        <img src="./images/flag/flag-italy.png" alt="United states" class="country__item--img">
+                        <h4 class="country__item--text">Italy</h4>
+                        <h4 class="country__item--total">321,000</h4>
+                    </div>
+
+                    <div class="country__item">
+                        <img src="./images/flag/flag-germany.png" alt="United states" class="country__item--img">
+                        <h4 class="country__item--text">Germany</h4>
+                        <h4 class="country__item--total">321,000</h4>
+                    </div>
+
+                    <div class="country__item">
+                        <img src="./images/flag/flag-china.png" alt="United states" class="country__item--img">
+                        <h4 class="country__item--text">China</h4>
+                        <h4 class="country__item--total">321,000</h4>
+                    </div>
+
+                    <div class="country__item">
+                        <img src="./images/flag/flag-france.png" alt="United states" class="country__item--img">
+                        <h4 class="country__item--text">France</h4>
+                        <h4 class="country__item--total">321,000</h4>
+                    </div>
+
+                    <div class="country__item">
+                        <img src="./images/flag/flag-iran.png" alt=" United states" class="country__item--img">
+                        <h4 class="country__item--text">Iran</h4>
+                        <h4 class="country__item--total">321,000</h4>
+                    </div>
+
+                    <div class="country__item">
+                        <img src="./images/flag/flag-uk.png" alt=" United states" class="country__item--img">
+                        <h4 class="country__item--text">United Kingdom</h4>
+                        <h4 class="country__item--total">321,000</h4>
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section> <!-- End demographics-->
+
+        <!-- Spread covid -->
+        <section class="spread">
+            <h2 class="spread__heading">How Coronavirus spread</h2>
+
+            <div class="spread__inner">
+                <div class="spread__inner--item">
+                    <img src="./images/symptoms/person-to-person.PNG" alt="Person to person spread covid"
+                        class="spread__inner--item--img">
+
+                    <h3 class="spread__inner--item--heading">Person-to-person spread</h3>
+                    <p class="spread__inner--item--text">The Coronavirus is thought to spread mainly from person to
+                        person. his can happen between people who are in close contact with one another.</p>
+                </div>
+
+                <div class="spread__inner--item">
+                    <img src="./images/symptoms/coughs.PNG" alt="Person cough spread covid"
+                        class="spread__inner--item--img">
+
+                    <h3 class="spread__inner--item--heading">Person coughs spread</h3>
+                    <p class="spread__inner--item--text">The Coronavirus is thought to spread mainly from person to
+                        person. his can happen between people who are in close contact with one another.</p>
+                </div>
+
+                <div class="spread__inner--item">
+                    <img src="./images/symptoms/sore-thorat-b.PNG" alt="Person cough spread covid"
+                        class="spread__inner--item--img">
+
+                    <h3 class="spread__inner--item--heading">Sore Throat</h3>
+                    <p class="spread__inner--item--text">The Coronavirus is thought to spread mainly from person to
+                        person. his can happen between people who are in close contact with one another.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Symptoms section-->
+        <section class="spread">
+            <h2 class="spread__heading">Symptoms of Coronavirus</h2>
+
+            <div class="spread__inner">
+                <div class="spread__inner--item">
+                    <img src="./images/symptoms/fever.PNG" alt="Person to person spread covid"
+                        class="spread__inner--item--img">
+
+                    <h3 class="spread__inner--item--heading">Fever</h3>
+                    <p class="spread__inner--item--text">The Coronavirus is thought to spread mainly from person to
+                        person. his can happen between people who are in close contact with one another.</p>
+                </div>
+
+                <div class="spread__inner--item">
+                    <img src="./images/symptoms/dry-cough.PNG" alt="Person cough spread covid"
+                        class="spread__inner--item--img">
+
+                    <h3 class="spread__inner--item--heading">Dry cough</h3>
+                    <p class="spread__inner--item--text">The Coronavirus is thought to spread mainly from person to
+                        person. his can happen between people who are in close contact with one another.</p>
+                </div>
+
+                <div class="spread__inner--item">
+                    <img src="./images/symptoms/sore-thorat-b.PNG" alt="Person cough spread covid"
+                        class="spread__inner--item--img">
+
+                    <h3 class="spread__inner--item--heading">Sore Throat</h3>
+                    <p class="spread__inner--item--text">The Coronavirus is thought to spread mainly from person to
+                        person. his can happen between people who are in close contact with one another.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Treatment section-->
+        <section class="spread">
+            <h2 class="spread__heading">Treatement of Coronavirus</h2>
+
+            <div class="spread__inner  spread__inner--treatment">
+                <div class="spread__inner--item treatment--item">
+                    <img src="./images/symptoms/wash-your-hands.PNG" alt="Wash your hands regularly with soap"
+                        class="spread__inner--item--img">
+
+                    <h3 class="spread__inner--item--heading">Wash your hands regularly with soap</h3>
+                    <p class="spread__inner--item--text treatment--text">Handwashing is one of the best ways to
+                        protect yourself and
+                        your family from getting sick. Learn when and how you should wash your hands to stay healthy
+                    </p>
+                </div>
+
+                <div class="spread__inner--item treatment--item">
+                    <img src="./images/symptoms/dry-cough.PNG" alt="Stay home if you feel unwell"
+                        class="spread__inner--item--img">
+
+                    <h3 class="spread__inner--item--heading">Stay home if you feel unwell.</h3>
+                    <p class="spread__inner--item--text  treatment--text">Most people wth COVID-19 have mild illness
+                        and are able to
+                        recover at home without medical care. Do not leae home except to get medical care.</p>
+                </div>
+
+                <div class="spread__inner--item treatment--item">
+                    <img src="./images/symptoms/avoid-coughing.PNG" alt="Avoid touching your face"
+                        class="spread__inner--item--img">
+
+                    <h3 class="spread__inner--item--heading">Avoid touching your face.</h3>
+                    <p class="spread__inner--item--text  treatment--text">To help prevent infections, keep your
+                        hands away from your
+                        eyes, nose and mouth. Why? Touching mucous membrance n your face.</p>
+                </div>
+
+                <div class="spread__inner--item treatment--item">
+                    <img src="./images/symptoms/cover-mouth.PNG" alt="cover your mouth when coughing"
+                        class="spread__inner--item--img">
+
+                    <h3 class="spread__inner--item--heading">Cover your mouth and nose.</h3>
+                    <p class="spread__inner--item--text  treatment--text">Cover your mouth and nose with a tissue
+                        when you cough or
+                        sneeze. Put your used tissue in a waste busket. If you don't have a tissue, cough or sneeze
+                        into you shirt.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Faq section -->
+    <section class="faq">
+        <h2 class="faq__heading">Faq</h2>
+
+        <div class="faq__inner">
+            <div class="faq__inner--item">
+                <nav class="faq__inner--item--nav">
+                    <ul>
+                        <li class="faq--link"><a href="#">Covid-19</a></li>
+                        <li class="faq--link"><a href="#">How it spreds</a></li>
+                        <li class="faq--link"><a href="#">How to protect yourself</a></li>
+                        <li class="faq--link"><a href="#">Symptoms &amp; Testing</a></li>
+                        <li class="faq--link"><a href="#">Community</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="faq--details">
+                <li class="faq--details-text">What is Coronavirus</li>
+                <li class="faq--details-text">Know how it spreads</li>
+                <li class="faq--details-text">What kind of was do you use &amp; and how long does it last?</li>
+                <li class="faq--details-text">What kind of resources do you need from me?</li>
+                <li class="faq--details-text">Does applying wax remove scratches &amp; swirl mark's</li>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog section-->
+    <section class="blog">
+        <h2 class="blog__heading">Blog topics</h2>
+
+        <div class="blog__inner">
+            <div class="blog__inner--item">
+                <div class="blog__inner--item-top"></div>
+
+                <h3 class="blog__inner--item--heading">Wearing face mask working</h3>
+                <p class="blog__inner--item--text">
+                    If you wear a mask, then you must know how to use it and dispose of it properly.
                 </p>
 
-                <div class="hero__left--buttons">
-                    <a href="#" class="btn btn--red">How to Protext</a>
-                    <a href="#" class="btn btn--transparent">Find a Doctor</a>
-                </div>
-            </div>
-
-            <div class="hero__right">
-                <img src="./images/assets/covid-avatar.PNG" alt="Illustrative image of the Covid-19 virus."
-                    class="hero__right--img">
-            </div>
-        </section>
-
-        <!-- Main content-->
-        <main class="container" role="main">
-            <!-- Staticsis Section-->
-            <section class="staticsis">
-                <!-- global -->
-                <div class="staticsis__item global">
-                    <img src="./images/assets/global.png" alt="llustrative image representing global active cases"
-                        class="staticsis__item--img global--img">
-
-                    <div class="staticsis__item--text">
-                        <p class="text-mute text-small text--left">Status Overview <span
-                                class="staticisis__global--text-live">
-                                Live</span></p>
-                        <h3 class="staticsis__item--text--heading text--left">Global</h3>
-                    </div>
-                </div>
-
-                <!-- active cases -->
-                <div class="staticsis__item">
-                    <img src="./images/assets/active.png" alt="Illustrative image demonstrating covid-19 active cases"
-                        class="staticsis__item--img">
-
-                    <div class="staticsis__item--text">
-                        <p class="text-mute text-small">Total Coronavirus cases</p>
-                        <h3 class="staticsis__item--text--heading">1,245,347</h3>
-                    </div>
-                </div>
-
-                <!-- Total recovered -->
-                <div class="staticsis__item">
-                    <img src="./images/assets/recovered.png"
-                        alt="Illustrative image demonstrating total recovered cases" class="staticsis__item--img">
-
-                    <div class="staticsis--item--text">
-                        <p class="text-mute text-small">Total Recovered</p>
-                        <h3 class="staticsis__item--text--heading">259,455</h3>
-                    </div>
-                </div>
-
-                <!-- Total deaths-->
-                <div class="staticsis__item">
-                    <img src="./images/assets/death.png" alt="Illustrative image demonstrating total death cases"
-                        class="staticsis__item--img death--img">
-
-                    <div class="staticsis--item--text">
-                        <p class="text-mute text-small text--left">Total Deaths</p>
-                        <h3 class="staticsis__item--text--heading text--left">68,184</h3>
-                    </div>
-                </div>
-
-            </section>
-
-            <!-- demographics-->
-            <section class="demographics">
-                <div class="demographic__large">
-                    <div class="demgraphic__large--inner">
-                        <h2 class="demographic__large--inner--heading">Covid-19 Affected Areas</h2>
-                        <div class="large--inner-headers">
-                            <h5 class="text-blue">Most affected</h5>
-                            <h5 class="text-blue">Least affected</h5>
-                        </div>
-                    </div>
-
-                    <div class="map-cover"></div>
-                </div>
-
-                <div class="demographics__small">
-                    <form action="#" method="get" class="form">
-                        <input type="text" class="form__input" placeholder="Enter a location">
-                    </form>
-                    <div class="result-panel">
-                        <h5 class="result-panel__left">Global</h5>
-                        <h5 class="result-panel__right">1,247,374</h5>
-                    </div>
-                    <div class="hr"></div>
-
-                    <!-- Country list-->
-                    <aside class="country">
-                        <div class="country__item">
-                            <img src="./images/flag/flag-usa.png" alt="United states" class="country__item--img">
-                            <h4 class="country__item--text">United States</h4>
-                            <h4 class="country__item--total">321,000</h4>
-                        </div>
-
-                        <div class="country__item">
-                            <img src="./images/flag/flag-spain.png" alt="United states" class="country__item--img">
-                            <h4 class="country__item--text">Spain</h4>
-                            <h4 class="country__item--total">131,000</h4>
-                        </div>
-
-                        <div class="country__item">
-                            <img src="./images/flag/flag-italy.png" alt="United states" class="country__item--img">
-                            <h4 class="country__item--text">Italy</h4>
-                            <h4 class="country__item--total">321,000</h4>
-                        </div>
-
-                        <div class="country__item">
-                            <img src="./images/flag/flag-germany.png" alt="United states" class="country__item--img">
-                            <h4 class="country__item--text">Germany</h4>
-                            <h4 class="country__item--total">321,000</h4>
-                        </div>
-
-                        <div class="country__item">
-                            <img src="./images/flag/flag-china.png" alt="United states" class="country__item--img">
-                            <h4 class="country__item--text">China</h4>
-                            <h4 class="country__item--total">321,000</h4>
-                        </div>
-
-                        <div class="country__item">
-                            <img src="./images/flag/flag-france.png" alt="United states" class="country__item--img">
-                            <h4 class="country__item--text">France</h4>
-                            <h4 class="country__item--total">321,000</h4>
-                        </div>
-
-                        <div class="country__item">
-                            <img src="./images/flag/flag-iran.png" alt=" United states" class="country__item--img">
-                            <h4 class="country__item--text">Iran</h4>
-                            <h4 class="country__item--total">321,000</h4>
-                        </div>
-
-                        <div class="country__item">
-                            <img src="./images/flag/flag-uk.png" alt=" United states" class="country__item--img">
-                            <h4 class="country__item--text">United Kingdom</h4>
-                            <h4 class="country__item--total">321,000</h4>
-                        </div>
-
-                    </aside>
-
-                </div>
-
-            </section> <!-- End demographics-->
-
-            <!-- Spread covid -->
-            <section class="spread">
-                <h2 class="spread__heading">How Coronavirus spread</h2>
-
-                <div class="spread__inner">
-                    <div class="spread__inner--item">
-                        <img src="./images/symptoms/person-to-person.PNG" alt="Person to person spread covid"
-                            class="spread__inner--item--img">
-
-                        <h3 class="spread__inner--item--heading">Person-to-person spread</h3>
-                        <p class="spread__inner--item--text">The Coronavirus is thought to spread mainly from person to
-                            person. his can happen between people who are in close contact with one another.</p>
-                    </div>
-
-                    <div class="spread__inner--item">
-                        <img src="./images/symptoms/coughs.PNG" alt="Person cough spread covid"
-                            class="spread__inner--item--img">
-
-                        <h3 class="spread__inner--item--heading">Person coughs spread</h3>
-                        <p class="spread__inner--item--text">The Coronavirus is thought to spread mainly from person to
-                            person. his can happen between people who are in close contact with one another.</p>
-                    </div>
-
-                    <div class="spread__inner--item">
-                        <img src="./images/symptoms/sore-thorat-b.PNG" alt="Person cough spread covid"
-                            class="spread__inner--item--img">
-
-                        <h3 class="spread__inner--item--heading">Sore Throat</h3>
-                        <p class="spread__inner--item--text">The Coronavirus is thought to spread mainly from person to
-                            person. his can happen between people who are in close contact with one another.</p>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- Symptoms section-->
-            <section class="spread">
-                <h2 class="spread__heading">symptoms of Coronavirus</h2>
-
-                <div class="spread__inner">
-                    <div class="spread__inner--item">
-                        <img src="./images/symptoms/fever.PNG" alt="Person to person spread covid"
-                            class="spread__inner--item--img">
-
-                        <h3 class="spread__inner--item--heading">Fever</h3>
-                        <p class="spread__inner--item--text">The Coronavirus is thought to spread mainly from person to
-                            person. his can happen between people who are in close contact with one another.</p>
-                    </div>
-
-                    <div class="spread__inner--item">
-                        <img src="./images/symptoms/dry-cough.PNG" alt="Person cough spread covid"
-                            class="spread__inner--item--img">
-
-                        <h3 class="spread__inner--item--heading">Dry cough</h3>
-                        <p class="spread__inner--item--text">The Coronavirus is thought to spread mainly from person to
-                            person. his can happen between people who are in close contact with one another.</p>
-                    </div>
-
-                    <div class="spread__inner--item">
-                        <img src="./images/symptoms/sore-thorat-b.PNG" alt="Person cough spread covid"
-                            class="spread__inner--item--img">
-
-                        <h3 class="spread__inner--item--heading">Sore Throat</h3>
-                        <p class="spread__inner--item--text">The Coronavirus is thought to spread mainly from person to
-                            person. his can happen between people who are in close contact with one another.</p>
-                    </div>
-
-                </div>
-
-            </section>
-
-            <!-- Treatment section-->
-            <section class="spread">
-                <h2 class="spread__heading">Treatement of Coronavirus</h2>
-
-                <div class="spread__inner  spread__inner--treatment">
-                    <div class="spread__inner--item treatment--item">
-                        <img src="./images/symptoms/wash-your-hands.PNG" alt="Wash your hands regularly with soap"
-                            class="spread__inner--item--img">
-
-                        <h3 class="spread__inner--item--heading">Wash your hands regularly with soap</h3>
-                        <p class="spread__inner--item--text treatment--text">Handwashing is one of the best ways to
-                            protect yourself and
-                            your family from getting sick. Learn when and how you should wash your hands to stay healthy
-                        </p>
-                    </div>
-
-                    <div class="spread__inner--item treatment--item">
-                        <img src="./images/symptoms/dry-cough.PNG" alt="Stay home if you feel unwell"
-                            class="spread__inner--item--img">
-
-                        <h3 class="spread__inner--item--heading">Stay home if you feel unwell.</h3>
-                        <p class="spread__inner--item--text  treatment--text">Most people wth COVID-19 have mild illness
-                            and are able to
-                            recover at home without medical care. Do not leae home except to get medical care.</p>
-                    </div>
-
-                    <div class="spread__inner--item treatment--item">
-                        <img src="./images/symptoms/avoid-coughing.PNG" alt="Avoid touching your face"
-                            class="spread__inner--item--img">
-
-                        <h3 class="spread__inner--item--heading">Avoid touching your face.</h3>
-                        <p class="spread__inner--item--text  treatment--text">To help prevent infections, keep your
-                            hands away from your
-                            eyes, nose and mouth. Why? Touching mucous membrance n your face.</p>
-                    </div>
-
-                    <div class="spread__inner--item treatment--item">
-                        <img src="./images/symptoms/cover-mouth.PNG" alt="cover your mouth when coughing"
-                            class="spread__inner--item--img">
-
-                        <h3 class="spread__inner--item--heading">Cover yu mouth and nose.</h3>
-                        <p class="spread__inner--item--text  treatment--text">Cover your mouth and nose with a tissue
-                            when you cough or
-                            sneeze. Put your used tissue in a waste busket. If you don't have a tissue, cough or sneeze
-                            into you shirt.</p>
-                    </div>
-
-                </div>
-
-            </section>
-
-        </main>
-
-        <!-- Faq section -->
-        <section class="faq">
-            <h2 class="faq__heading">Faq</h2>
-
-            <div class="faq__inner">
-                <div class="faq__inner--item">
-                    <nav class="faq__inner--item--nav">
-                        <ul>
-                            <li class="faq--link"><a href="#">Covid-19</a></li>
-                            <li class="faq--link"><a href="#">How it spreds</a></li>
-                            <li class="faq--link"><a href="#">How to protect yourself</a></li>
-                            <li class="faq--link"><a href="#">Symptoms &amp; Testing</a></li>
-                            <li class="faq--link"><a href="#">Community</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <div class="faq--details">
-                    <li class="faq--details-text">What is Coronavirus</li>
-                    <li class="faq--details-text">Know how it spreads</li>
-                    <li class="faq--details-text">What kind of was do you use &amp; and how long does it last?</li>
-                    <li class="faq--details-text">What kind of resources do you need from me?</li>
-                    <li class="faq--details-text">Does applying wax remove scratches &amp; swirl mark's</li>
-                </div>
-            </div>
-        </section>
-
-        <!-- Blog section-->
-        <section class="blog">
-            <h2 class="blog__heading">Blog topics</h2>
-
-            <div class="blog__inner">
-                <div class="blog__inner--item">
-                    <div class="blog__inner--item-top"></div>
-
-                    <h3 class="blog__inner--item--heading">Wearing face mask working</h3>
-                    <p class="blog__inner--item--text">
-                        If you wear a mask, then you must know how to use it and dispose of it properly.
-                    </p>
-
-                    <div class="blog__inner--item---stamp">
-                        <p class="pusblish-date">10 Mar 2022</p>
-                        <p>
-                            <a href="#" class="read-more">read more</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="blog__inner--item">
-                    <div class="blog__inner--item-top"></div>
-
-                    <h3 class="blog__inner--item--heading">Cleaning hands with sanitizer</h3>
-                    <p class="blog__inner--item--text">
-                        Washing your hands can protect you and your family from getting infected. Also, alcohol-based
-                        hand sanitize kill the coronavirus.
-                    </p>
-
-                    <div class="blog__inner--item---stamp">
-                        <p class="pusblish-date">10 Mar 2022</p>
-                        <p>
-                            <a href="#" class="read-more">read more</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="blog__inner--item">
-                    <div class="blog__inner--item-top"></div>
-
-                    <h3 class="blog__inner--item--heading">Stay home</h3>
-                    <p class="blog__inner--item--text">
-                        Stay home, Save live. As Covid-19 continues to impact communities around the world...
-                    </p>
-
-                    <div class="blog__inner--item---stamp">
-                        <p class="pusblish-date">10 Mar 2022</p>
-                        <p>
-                            <a href="#" class="read-more">read more</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <button class="btn view-all">View all</button>
-        </section>
-
-        <!-- Footer section-->
-        <footer class="footer">
-            <div class="footer__inner">
-                <div class="brand">
-                    <img src="./images/assets/logo.PNG" alt="live tracker logo">
-                    <p class="brand--text">
-                        Get the latest Covid-19 news and other informations here.
+                <div class="blog__inner--item---stamp">
+                    <p class="pusblish-date">10 Mar 2022</p>
+                    <p>
+                        <a href="#" class="read-more">read more</a>
                     </p>
                 </div>
-
-                <div class="footer-links">
-                    <h5 class="footer-links__text">Useful Links</h5>
-                    <ul>
-                        <li><a href="#" class="footer-links__text--link">Why?</a></li>
-                        <li><a href="#" class="footer-links__text--link">About</a></li>
-                        <li><a href="#" class="footer-links__text--link">Careers</a></li>
-                        <li><a href="#" class="footer-links__text--link">Blog</a></li>
-                        <li><a href="#" class="footer-links__text--link">Contract</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links">
-                    <h5 class="footer-links__text">Contact Us</h5>
-                    <ul>
-                        <li><a href="#" class="footer-links__text--link">Tel: +233-000-000</a></li>
-                        <li><a href="#" class="footer-links__text--link">support@gmail.com</a></li>
-                        <li><a href="#" class="footer-links__text--link">Careers</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links">
-                    <h5 class="footer-links__text">keep in touch</h5>
-                    <ul>
-                        <li><a href="#" class="footer-links__text--link">FB</a></li>
-                        <li><a href="#" class="footer-links__text--link">YouTube</a></li>
-                        <li><a href="#" class="footer-links__text--link">Instagram</a></li>
-                    </ul>
-                </div>
-
-            </div>
-            <!--Footer inner ends-->
-
-            <div class="hr"></div>
-
-            <div class="author">
-                <p>&copy;2022 Design with 💓 by: Emmanuel Asamoah</p>
             </div>
 
-        </footer>
+            <div class="blog__inner--item">
+                <div class="blog__inner--item-top"></div>
 
-    </body>
+                <h3 class="blog__inner--item--heading">Cleaning hands with sanitizer</h3>
+                <p class="blog__inner--item--text">
+                    Washing your hands can protect you and your family from getting infected. Also, alcohol-based
+                    hand sanitize kill the coronavirus.
+                </p>
+
+                <div class="blog__inner--item---stamp">
+                    <p class="pusblish-date">10 Mar 2022</p>
+                    <p>
+                        <a href="#" class="read-more">read more</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog__inner--item">
+                <div class="blog__inner--item-top"></div>
+
+                <h3 class="blog__inner--item--heading">Stay home</h3>
+                <p class="blog__inner--item--text">
+                    Stay home, Save live. As Covid-19 continues to impact communities around the world...
+                </p>
+
+                <div class="blog__inner--item---stamp">
+                    <p class="pusblish-date">10 Mar 2022</p>
+                    <p>
+                        <a href="#" class="read-more">read more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn view-all">View all</button>
+    </section>
+
+    <!-- Footer section-->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="brand">
+                <img src="./images/assets/logo.PNG" alt="live tracker logo">
+                <p class="brand--text">
+                    Get the latest Covid-19 news and other informations here.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h5 class="footer-links__text">Useful Links</h5>
+                <ul>
+                    <li><a href="#" class="footer-links__text--link">Why?</a></li>
+                    <li><a href="#" class="footer-links__text--link">About</a></li>
+                    <li><a href="#" class="footer-links__text--link">Careers</a></li>
+                    <li><a href="#" class="footer-links__text--link">Blog</a></li>
+                    <li><a href="#" class="footer-links__text--link">Contract</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h5 class="footer-links__text">Contact Us</h5>
+                <ul>
+                    <li><a href="#" class="footer-links__text--link">Tel: +233-000-000</a></li>
+                    <li><a href="#" class="footer-links__text--link">support@gmail.com</a></li>
+                    <li><a href="#" class="footer-links__text--link">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h5 class="footer-links__text">keep in touch</h5>
+                <ul>
+                    <li><a href="#" class="footer-links__text--link">FB</a></li>
+                    <li><a href="#" class="footer-links__text--link">YouTube</a></li>
+                    <li><a href="#" class="footer-links__text--link">Instagram</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!--Footer inner ends-->
+
+        <div class="hr"></div>
+
+        <div class="author">
+            <p>&copy;2022 Design with 💓 by: Emmanuel Asamoah</p>
+        </div>
+
+    </footer>
+
+</body>
 
 </html>
